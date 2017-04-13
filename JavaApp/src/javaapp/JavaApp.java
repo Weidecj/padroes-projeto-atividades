@@ -16,7 +16,7 @@ public class JavaApp {
             
     public static void main(String[] args) {
         JavaApp mensagem = new JavaApp();
-        mensagem.setMensagem("Hello world!");
+        mensagem.setMensagem("Olá mundo!");
         JOptionPane.showMessageDialog(null, mensagem.getMensagem());
     }
     
