@@ -1,21 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package javaapp;
 
-/**
- *
- * @author 00715111213
- */
+import javax.swing.JOptionPane;
+
 public class JavaApp {
 
-    /**
-     * @param args the command line arguments
-     */
+    private String mensagem;
+    
+    public void setMensagem(String mensagem){
+        this.mensagem = mensagem;
+    }
+    
+    public String getMensagem(){
+        return this.mensagem;
+    }
+            
     public static void main(String[] args) {
-        // TODO code application logic here
+        JavaApp mensagem = new JavaApp();
+        mensagem.setMensagem("Hello world!");
+        JOptionPane.showMessageDialog(null, mensagem.getMensagem());
     }
     
 }
